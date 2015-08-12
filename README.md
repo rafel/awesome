@@ -28,5 +28,5 @@ Kernel : 3.13.0-37-generic
 
 - Zenburn theme
 - Volume status, Memory status, Cpu status And battery status
-- Key hooks for Volume control , Brtiness control (Works fine for laptops with FN + volumeup , FN + + volumedown  etc.)
+- Key hooks for Volume control , Brtiness control (FN + volumeup , FN + volumedown  etc.)
 - Custom wallpaper
