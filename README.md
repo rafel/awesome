@@ -47,7 +47,7 @@ Latest version of awesome
     sudo apt-get install awesome
 
     
-** Install the configuration ** 
+**Install the configuration** 
 
     cd ~/.config
     git clone https://github.com/rafel/awesome.git awesome
