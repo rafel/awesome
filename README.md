@@ -3,9 +3,11 @@ This is my configuration for Awesome v3.5.6 window manager
 
 ## Tested on
 
+
 **Hardware**
 
 Dell XPS 13 (9343) 
+
 
 **Operating system**
 
@@ -27,23 +29,29 @@ Kernel : 3.13.0-37-generic
 - Key hooks for Volume control , Brtiness control (FN + volumeup , FN + volumedown  etc.)
 - Custom wallpaper
 
+
 ## Installation
 
+
 **Pre requirement**
+
 Backlight control
 
     sudo apt-get install xbacklight
+
 
 Latest version of awesome
 
     sudo add-apt-repository ppa:klaus-vormweg/awesome
     sudo apt-get update
     sudo apt-get install awesome
+
     
 ** Install the configuration ** 
 
     cd ~/.config
     git clone https://github.com/rafel/awesome.git awesome
+
 
 Restart awesome
 
