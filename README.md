@@ -39,6 +39,10 @@ Backlight control
 
     sudo apt-get install xbacklight
 
+Battery status
+
+    sudo apt-get install lua5.1 luarocks libgirepository1.0-dev acpi
+    sudo luarocks install battery_status
 
 Latest version of awesome
 
