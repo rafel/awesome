@@ -10,7 +10,6 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
-local battery = require("battery")
 
 -- Load Debian menu entries
 require("debian.menu")
@@ -152,9 +151,6 @@ local volume = blingbling.volume({height = 30,
 volume:update_master()
 volume:set_master_control()
 
-batterywidget = wibox.widget.textbox()
-
-
 --volume:update_master()
 -- {{{ Wibox
 -- Create a textclock widget
@@ -250,7 +246,6 @@ for s = 1, screen.count() do
     right_layout:add(cpu_graph)
     right_layout:add(volume)
     right_layout:add(calendar)
-    right_layout:add(batterywidget)
     right_layout:add(mylayoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)
@@ -526,10 +521,4 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
-
-batterywidget_timer = timer({timeout = 1})
-batterywidget_timer:connect_signal("timeout", function()
-	batterywidget:set_text(batteryInfo("BAT0"))
-end)
-batterywidget_timer:start()
-batterywidget:set_text(batteryInfo("BAT0"))
+awful.util.spawn_with_shell("show_battery_status")
