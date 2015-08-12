@@ -10,7 +10,7 @@ local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
 local menubar = require("menubar")
-local battery = require("battery")
+--local battery = require("battery")
 
 -- Load Debian menu entries
 require("debian.menu")
@@ -250,7 +250,7 @@ for s = 1, screen.count() do
     right_layout:add(cpu_graph)
     right_layout:add(volume)
     right_layout:add(calendar)
-    right_layout:add(batterywidget)
+--    right_layout:add(batterywidget)
     right_layout:add(mylayoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)
@@ -526,10 +526,11 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+awful.util.spawn_with_shell("show_battery_status")
 
-batterywidget_timer = timer({timeout = 1})
-batterywidget_timer:connect_signal("timeout", function()
-	batterywidget:set_text(batteryInfo("BAT0"))
-end)
-batterywidget_timer:start()
-batterywidget:set_text(batteryInfo("BAT0"))
+--batterywidget_timer = timer({timeout = 1})
+--batterywidget_timer:connect_signal("timeout", function()
+--	batterywidget:set_text(batteryInfo("BAT0"))
+--end)
+--batterywidget_timer:start()
+--batterywidget:set_text(batteryInfo("BAT0"))
