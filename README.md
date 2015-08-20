@@ -59,3 +59,6 @@ Latest version of awesome
 
 Restart awesome
 
+
+## Screenshot
+![alt Screenshot](https://raw.githubusercontent.com/rafel/awesome/master/Screenshot.png)
