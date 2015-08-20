@@ -294,6 +294,13 @@ awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer -D pulse se
     awful.util.spawn("gnome-screenshot -a")
   end),
 
+  awful.key({modkey,}, "Print", function ()
+    awful.util.spawn("gnome-screenshot -c")
+  end),
+  awful.key({modkey,"Shift" }, "Print", false, function ()
+    awful.util.spawn("gnome-screenshot -a -c")
+  end),
+
 
  awful.key({modkey,"Control" }, "l", false, function ()
     awful.util.spawn("gnome-screensaver-command -l")
