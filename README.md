@@ -62,3 +62,7 @@ Restart awesome
 
 ## Screenshot
 ![alt Screenshot](https://raw.githubusercontent.com/rafel/awesome/master/Screenshot.png)
+
+The theme for VIM (the editor on the left) is not included, to get my vim config visit the repo:
+
+[https://github.com/rafel/vim](https://github.com/rafel/vim)
