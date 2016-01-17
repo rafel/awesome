@@ -49,6 +49,7 @@ Latest version of awesome
     sudo add-apt-repository ppa:klaus-vormweg/awesome
     sudo apt-get update
     sudo apt-get install awesome
+    sudo apt-get install awesome-extra
 
     
 **Install the configuration** 
