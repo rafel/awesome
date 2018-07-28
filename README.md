@@ -1,5 +1,5 @@
 # awesome config
-This is my configuration for Awesome v3.5.6 window manager
+This is my configuration for Awesome Window Manager V4.2
 
 ## Tested on
 
@@ -13,19 +13,15 @@ Dell XPS 13 (9343)
 
 Distributor ID:	Ubuntu
 
-Description:	Ubuntu 14.04.3 LTS
+Description:	Ubuntu 18.04.1 LTS
 
-Release:	14.04
-
-Codename:	trusty
-
-Kernel : 3.13.0-37-generic
+Kernel : 		4.15.0-29-generic
 
 
 ## Features
 
 - Zenburn theme
-- Volume status, Memory status, Cpu status And battery status
+- Volume status, Memory status, Cpu status, battery status and WIFI
 - Key hooks for Volume control , Brtiness control (FN + volumeup , FN + volumedown  etc.)
 - Custom wallpaper
 
@@ -35,14 +31,10 @@ Kernel : 3.13.0-37-generic
 
 **Pre requirement**
 
+
 Backlight control
 
     sudo apt-get install xbacklight
-
-Battery status
-
-    sudo apt-get install lua5.1 luarocks libgirepository1.0-dev acpi
-    sudo luarocks install battery_status
 
 Latest version of awesome
 
@@ -51,7 +43,8 @@ Latest version of awesome
     sudo apt-get install awesome
     sudo apt-get install awesome-extra
 
-    
+Restart your computer at this point
+
 **Install the configuration** 
 
     cd ~/.config
